@@ -21,7 +21,15 @@ def load_data():
 df, numeric_df = load_data()
 
 # 3. SIDEBAR NAVIGATION
-page = st.sidebar.selectbox("Navigate Project", ["Executive Summary & EDA", "AI Model & Strategic Insights"])
+st.sidebar.markdown(
+    "[🐙 View Source Code on GitHub](https://github.com/kratimandovra/Enterprise-Asset-Intelligence-Platform)"
+)
+
+page = st.sidebar.selectbox(
+    "Navigate Project",
+    ["Executive Summary & EDA", "AI Model & Strategic Insights"]
+)
+
 
 if page == "Executive Summary & EDA":
     st.subheader("📊 Operational Fleet Overview (Current State)")
